@@ -72,6 +72,9 @@ void USART2_IRQHandler(void)
         // Leer el dato del RDR. Esta acción usualmente limpia el flag RXNE.
         char received_char = (char)(USART2->RDR & 0xFF);
         uart2_send_char(received_char); // Eco del carácter recibido 
-        // Procesar el carácter recibido.
+        room_control_on_uart_receive(received_char); // Procesa el carácter recibido
     }
+
+        // Procesar el carácter recibido.
+    
 }

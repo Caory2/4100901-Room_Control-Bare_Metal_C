@@ -11,7 +11,7 @@
 #include <stdint.h>
 #include "gpio.h"
 
-typedef struct {
+typedef struct {     // predecessor of the class| agrupacion de variables
     volatile uint32_t CR;
     volatile uint32_t ICSCR;
     volatile uint32_t CFGR;
@@ -37,7 +37,7 @@ typedef struct {
     volatile uint32_t APB1ENR1;
     volatile uint32_t APB1ENR2;
     volatile uint32_t APB2ENR;
-} RCC_TypeDef;
+} RCC_TypeDef;  //nombre de la estructura
 
 
 #define RCC_BASE (0x40021000U)

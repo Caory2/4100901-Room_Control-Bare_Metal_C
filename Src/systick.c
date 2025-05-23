@@ -53,4 +53,17 @@ void systick_delay_ms(uint32_t ms)
 void SysTick_Handler(void)
 {
     g_systick_ms_count++;
+
+    room_control_periodic_1ms();
+
+        // --- Lógica periódica de usuario ---
+    // Ejemplo: manejo de contadores de software
+    // static uint32_t user_timer = 0;
+    // user_timer++;
+    // if (user_timer >= 1000) { // Cada 1 segundo
+    //     user_timer = 0;
+    //     // Acción periódica, por ejemplo, cambiar el estado de un LED
+    // }
+    // Agrega aquí otras tareas periódicas que deban ejecutarse cada 1 ms
+
 }

@@ -56,7 +56,7 @@ typedef struct {
 #define USER_BUTTON_PIN             13    // PC13 para B1
 #define USER_BUTTON_PORT         GPIOC    
 
-
+// Prototipos de funciones
 void gpio_setup_pin(GPIO_TypeDef *gpio_port, uint8_t pin_number, uint8_t mode, uint8_t alternate_function);
 void gpio_write_pin(GPIO_TypeDef *gpio_port, uint8_t pin_number, uint8_t pin_state);
 uint8_t gpio_read_pin(GPIO_TypeDef *gpio_port, uint8_t pin_number);
